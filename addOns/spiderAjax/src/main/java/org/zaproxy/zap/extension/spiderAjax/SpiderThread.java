@@ -197,6 +197,7 @@ public class SpiderThread implements Runnable {
                         target.getOptions().getNumberOfBrowsers(),
                         new AjaxSpiderBrowserBuilder(target.getOptions().getBrowserId())));
 
+        configurationBuilder.crawlRules().crawlHiddenAnchors(true);
         if (target.getOptions().isClickDefaultElems()) {
             configurationBuilder.crawlRules().clickDefaultElements();
         } else {

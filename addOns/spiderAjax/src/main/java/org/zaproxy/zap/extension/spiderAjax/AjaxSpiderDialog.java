@@ -22,7 +22,6 @@ package org.zaproxy.zap.extension.spiderAjax;
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.net.URI;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JButton;
@@ -451,7 +450,7 @@ public class AjaxSpiderDialog extends StandardFieldsDialog {
             try {
                 // Need both constructors as they catch slightly different issues ;)
                 startUri = new URI(url);
-                new URL(url);
+                startUri.toURL();
             } catch (Exception e) {
                 return Constant.messages.getString("spiderajax.scandialog.nostart.error");
             }
