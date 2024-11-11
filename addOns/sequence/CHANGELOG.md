@@ -5,7 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Unreleased
 ### Added
+- Add `sequence-import` Automation Framework job.
 - Initial sequence-activeScan implementation.
+- Data for reporting.
+- Sequence active scan policy.
+
 ### Changed
 - Update minimum ZAP version to 2.15.0.
 - Maintenance changes.
