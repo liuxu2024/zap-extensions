@@ -121,7 +121,7 @@ public class MissingUrlsThread extends Thread {
                     && target.getContext() != null
                     && !target.getContext().isInContext(url)) {
                 LOGGER.debug("URL not in context {}", url);
-            } else if (!csd.isVisited() && !csd.isStorage()) {
+            } else /*if (!csd.isVisited() && !csd.isStorage())*/ {
                 try {
                     StructuralNode siteNode =
                             SessionStructure.find(
